@@ -1,0 +1,38 @@
+body{
+width: 100vw;
+height: 100vh;
+}
+
+.centro{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.quadrado{
+    position:absolute;
+    width: 500px;
+    height: 500px;
+    opacity: 0.1;
+    background-color: rgb(46, 46, 46);
+}
+
+.circulo{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    right: 0;
+    bottom:0;
+    width:100px;
+    height: 100px;
+    border-radius:150px;
+    background-color: white;
+    /* z-index:11; */
+    transition: all 2s;
+}
+
+.centro:hover .circulo{
+    /* z-index: 1 */
+    bottom:200px;
+    right:200px;
+}
